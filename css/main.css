@@ -120,14 +120,13 @@ textarea {
    .itemscenter{
      background-color: rgba(4, 95, 189, 0.5);
      width: 100%;
-     height: 41em;
+     height: 40em;
 
 
    }
    .center{
-     display: flex;
-     align-items: center;
-     justify-content: center;
+     width: 100vw;
+     margin-left: calc(-50vw + 50%);
      margin-top: 10vh;
    }
 
@@ -156,18 +155,19 @@ textarea {
                       /* End items section */
                        /* Start Video section */
 .section-video{
-  background-color: rgba(0,0,255,0.5);
-  opacity: 0.9;
+  /*background-color: rgba(0,0,0,0.7);*/
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
+
 }
                        /* End Video section */
                        /* Start Footer section */
 footer{
   display: flex;
   justify-content: center;
+  he
 }
                        /* Start Footer section */
 
@@ -183,10 +183,17 @@ footer{
 p{
   color: white;
   font-family: 'K2D', sans-serif;
+
 }
-h1{
-  font-family: 'Rajdhani', sans-serif;
-  color: white;
+h2, h1{
+  color: #0072bb;
+  font-family: 'Pixelmania', sans-serif;
+  font-size: 2em;
+}
+
+@font-face {
+ font-family: "Pixelmania";
+ src: url("../font/Pixelmania.ttf") format("ttf"),
 }
    /*
    ~~~~~~~~ End Common Rules ~~~~~~~~~
@@ -206,7 +213,15 @@ nav{
   radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
   background-color:#282828;
   background-size:16px 16px;
-  height: 7vh;
+  height: 12vh;
+  border-bottom: 1px solid #0072bb;
+
+}
+
+#TDG{
+  filter: invert(100%);
+  margin-left: 1em;
+  margin-top: 10px;
 }
 
 /*
@@ -250,6 +265,12 @@ nav a{
 /* End Nav block */
 /* Start item block */
 
+#titre{
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
           /* The 3 picture of item block */
 
 
@@ -258,7 +279,7 @@ nav a{
   height: 350px;
   background-color: red;
   margin: auto;
-  margin-top: 4em;
+  margin-top: 2em;
 }
 
 .img-item p{
@@ -267,11 +288,39 @@ nav a{
 
 /* End item block */
 /* Start Video block */
+#logovideo{
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
  .video {
 
   background-color: rgba(128,128,128,0);
 }
 
+article p{
+  margin-top: 1em;
+  color: black;
+  width: 718px;
+
+}
+.infoblock{
+  border: 2px solid #0072bb;
+  width: 11em;
+  height: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+
+}
+article a{
+  font-size: 1em;
+  font-family: 'Rajdhani', sans-serif;
+  color: #0072bb;
+  text-decoration: none;
+}
 /* End Video block */
 
 
@@ -284,8 +333,27 @@ footer{
   radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
   background-color:#282828;
   background-size:16px 16px;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer ul{
+  color: pink;
+  display: flex;
+  flex-direction: row;
+}
+footer ul li{
+  border: inherit;
+  display: flex;
+  flex-direction: column-reverse;
+
 }
 
+#contact{
+
+  color: red;
+}
 /* End Footer block */
 
 
