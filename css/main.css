@@ -111,11 +111,15 @@ textarea {
      background-image: url(../img/backgeek.jpg);
      background-size: contain;
 
+
    }
    main{
      width: 95%;
      margin: auto;
-
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
    }
    .itemscenter{
      background-color: rgba(4, 95, 189, 0.5);
@@ -135,6 +139,19 @@ textarea {
      display: flex;
      flex-direction: row;
      justify-content: space-between;
+     overflow: hidden;
+     position: fixed;
+     top: 0;
+     width: 100%;
+     background:
+     radial-gradient(black 15%, transparent 16%) 0 0,
+     radial-gradient(black 15%, transparent 16%) 8px 8px,
+     radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+     radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+     background-color:#282828;
+     background-size:16px 16px;
+     height: 12vh;
+     border-bottom: 1px solid #0072bb;
    }
    .nav-right-contener{
      display: flex;
@@ -205,18 +222,7 @@ h2, h1{
 
 /* Start Nav block */
 
-nav{
-  background:
-  radial-gradient(black 15%, transparent 16%) 0 0,
-  radial-gradient(black 15%, transparent 16%) 8px 8px,
-  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-  background-color:#282828;
-  background-size:16px 16px;
-  height: 12vh;
-  border-bottom: 1px solid #0072bb;
 
-}
 
 #TDG{
   filter: invert(100%);
@@ -256,10 +262,6 @@ nav a{
   font-family: 'Rajdhani', sans-serif;
   color: white;
   text-decoration: none;
-
-
-
-
 }
 
 /* End Nav block */
@@ -268,8 +270,24 @@ nav a{
 #titre{
   display: flex;
   justify-content: center;
-  margin-top: 2em;
+  margin-top: 5em;
   margin-bottom: 2em;
+}
+.listeblock{
+  border: 2px solid #0072bb;
+  width: 11em;
+  height: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+}
+main a{
+  color: #0072bb;
+  font-size: 1em;
+  font-family: 'Rajdhani', sans-serif;
+  text-decoration: none;
 }
           /* The 3 picture of item block */
 
@@ -337,9 +355,10 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
 }
 footer ul{
-  color: pink;
+  color: white;
   display: flex;
   flex-direction: row;
 }
@@ -347,12 +366,17 @@ footer ul li{
   border: inherit;
   display: flex;
   flex-direction: column-reverse;
-
 }
 
+footer a{
+  color: white;
+  font-size: 1em;
+  font-family: 'Rajdhani', sans-serif;
+  text-decoration: none;
+}
 #contact{
 
-  color: red;
+  color: #0072bb;
 }
 /* End Footer block */
 
