@@ -120,19 +120,9 @@ textarea {
      flex-direction: column;
      justify-content: center;
      align-items: center;
+     margin-top: 20vh;
    }
-   .itemscenter{
-     background-color: rgba(4, 95, 189, 0.5);
-     width: 100%;
-     height: 41em;
 
-
-   }
-   .center{
-     width: 100vw;
-     margin-left: calc(-50vw + 50%);
-     margin-top: 10vh;
-   }
 
                      /* Nav Section */
    nav{
@@ -163,24 +153,6 @@ textarea {
 
                       /* End Nav section */
 
-                      /* Start items section */
-   .page-produit{
-     display: flex;
-     justify-content: center;
-     justify-content: space-between;
-   }
-
-                      /* End items section */
-                       /* Start Video section */
-.section-video{
-  /*background-color: rgba(0,0,0,0.7);*/
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
-                       /* End Video section */
                        /* Start Footer section */
 footer{
   display: flex;
@@ -201,6 +173,7 @@ footer{
 p{
   color: white;
   font-family: 'K2D', sans-serif;
+  background-color: black;
 
 }
 h2, h1{
@@ -265,103 +238,6 @@ nav li:hover{
 }
 
 /* End Nav block */
-/* Start item block */
-
-#titre{
-  display: flex;
-  justify-content: center;
-  margin-top: 5em;
-  margin-bottom: 2em;
-}
-.listeblock{
-  border: 2px solid #0072bb;
-  width: 11em;
-  height: 2em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2em;
-}
-
-.listeblock:hover{
-  background-color: #0072bb;
-  color: white;
-  font-size: 1em;
-  font-family: 'Rajdhani', sans-serif;
-  text-decoration: none;
-}
-
-main a{
-  color: #0072bb;
-  font-size: 1em;
-  font-family: 'Rajdhani', sans-serif;
-  text-decoration: none;
-}
-          /* The 3 picture of item block */
-
-
-.img-item{
-  width: 350px;
-  height: 350px;
-  margin: auto;
-  margin-top: 2em;
-}
-
-  .img-item a img:hover{
-  filter: brightness(1.2);
-
-}
-
-
-.img-item p{
-  margin-top: 1em;
-}
-
-/* End item block */
-/* Start Video block */
-#logovideo{
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
- .video {
-
-  background-color: rgba(128,128,128,0);
-}
-
-article p{
-  margin-top: 1em;
-  color: black;
-  width: 718px;
-
-}
-.infoblock{
-  border: 2px solid #0072bb;
-  width: 11em;
-  height: 2em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-
-article a{
-  font-size: 1em;
-  font-family: 'Rajdhani', sans-serif;
-  color: #0072bb;
-  text-decoration: none;
-}
-
-article a :hover{
-  background-color: #0072bb;
-  color: white;
-  font-size: 1em;
-  font-family: 'Rajdhani', sans-serif;
-  text-decoration: none;
-}
-/* End Video block */
 
 
 /* Start Footer block */

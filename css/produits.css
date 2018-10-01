@@ -119,20 +119,8 @@ textarea {
      display: flex;
      flex-direction: column;
      justify-content: center;
-     align-items: center;
    }
-   .itemscenter{
-     background-color: rgba(4, 95, 189, 0.5);
-     width: 100%;
-     height: 41em;
 
-
-   }
-   .center{
-     width: 100vw;
-     margin-left: calc(-50vw + 50%);
-     margin-top: 10vh;
-   }
 
                      /* Nav Section */
    nav{
@@ -162,25 +150,17 @@ textarea {
    }
 
                       /* End Nav section */
-
-                      /* Start items section */
-   .page-produit{
-     display: flex;
-     justify-content: center;
-     justify-content: space-between;
-   }
-
-                      /* End items section */
-                       /* Start Video section */
-.section-video{
-  /*background-color: rgba(0,0,0,0.7);*/
-  background-color: white;
+                        /* Start list section */
+.list{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-
+  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-                       /* End Video section */
+.list img{
+  margin-top: 2em;
+}
+                        /* End List section */
                        /* Start Footer section */
 footer{
   display: flex;
@@ -265,104 +245,56 @@ nav li:hover{
 }
 
 /* End Nav block */
-/* Start item block */
+/* Start Form */
+.form{
 
-#titre{
+  background:
+  radial-gradient(black 15%, transparent 16%) 0 0,
+  radial-gradient(black 15%, transparent 16%) 8px 8px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+  background-color:#282828;
+  background-size:16px 16px;
+
+  margin-top: 20vh;
+  height: 40vh;
+
+  font-family: 'Rajdhani', sans-serif;
+
   display: flex;
-  justify-content: center;
-  margin-top: 5em;
-  margin-bottom: 2em;
-}
-.listeblock{
-  border: 2px solid #0072bb;
-  width: 11em;
-  height: 2em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 2em;
-}
-
-.listeblock:hover{
-  background-color: #0072bb;
-  color: white;
-  font-size: 1em;
-  font-family: 'Rajdhani', sans-serif;
-  text-decoration: none;
-}
-
-main a{
-  color: #0072bb;
-  font-size: 1em;
-  font-family: 'Rajdhani', sans-serif;
-  text-decoration: none;
-}
-          /* The 3 picture of item block */
-
-
-.img-item{
-  width: 350px;
-  height: 350px;
-  margin: auto;
-  margin-top: 2em;
-}
-
-  .img-item a img:hover{
-  filter: brightness(1.2);
-
-}
-
-
-.img-item p{
-  margin-top: 1em;
-}
-
-/* End item block */
-/* Start Video block */
-#logovideo{
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
- .video {
-
-  background-color: rgba(128,128,128,0);
-}
-
-article p{
-  margin-top: 1em;
-  color: black;
-  width: 718px;
-
-}
-.infoblock{
-  border: 2px solid #0072bb;
-  width: 11em;
-  height: 2em;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin-top: 2em;
-  margin-bottom: 2em;
 }
-
-article a{
-  font-size: 1em;
-  font-family: 'Rajdhani', sans-serif;
-  color: #0072bb;
-  text-decoration: none;
+label[for=field1] input{
+  font-size: 3em;
 }
-
-article a :hover{
-  background-color: #0072bb;
+#trier{
   color: white;
-  font-size: 1em;
-  font-family: 'Rajdhani', sans-serif;
-  text-decoration: none;
+  font-size: 2em;
 }
-/* End Video block */
+label[for=field4] input span{
+  font-size: 3em;
+  color: white;
+}
+form .submit{
+  color: red;
+  height: 4em;
+  width: 9em;
+  font-family: 'Pixelmania', sans-serif;
+  font-size: 2em;
+  border: none;
+  background: none;
+}
+.form-style img{
+  filter: invert(100);
+}
 
+.list{
+  background-color: rgba(4, 95, 189, 0.5);
+}
+/* End Form */
 
 /* Start Footer block */
 footer{
